@@ -1,0 +1,20 @@
+<div>
+	<h1>Departamentos</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th><a href="#/department/new"><i class="icon-plus-sign"></i></a></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="department in departments | orderBy:'name'">
+				<td>{{employee.name}}</td>
+				<td><a href="#/department/edit/{{department.id}}"><i
+						class="icon-pencil"></i></a></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>

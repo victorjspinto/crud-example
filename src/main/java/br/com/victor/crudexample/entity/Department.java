@@ -9,12 +9,15 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 @Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
+@Table(name=Department.TABLE_NAME, uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
 public class Department extends AbstractEntity {
 
 	public static final String TABLE_NAME = "TB_DEPARTMENT";
-	
+
+	@JsonProperty("name")
 	private String name;
 	private Set<Employee> employees;
 	

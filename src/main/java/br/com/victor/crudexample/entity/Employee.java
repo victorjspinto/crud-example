@@ -8,12 +8,15 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 @Entity
 @Table(name=Employee.TABLE_NAME, uniqueConstraints = @UniqueConstraint(columnNames = { "name" }))
 public class Employee extends AbstractEntity {
 
 	public static final String TABLE_NAME = "TB_EMPLOYEE";
 	
+	@JsonProperty("name")
 	private String name;
 	private Department department;
 

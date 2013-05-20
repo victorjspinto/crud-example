@@ -5,9 +5,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 @MappedSuperclass
 public abstract class AbstractEntity {
 
+	@JsonProperty("id")
 	private Long id;
 
 	@Id

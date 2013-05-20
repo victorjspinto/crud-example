@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="crudexample">
+	<head>
+		<title>Exemplo de Crud</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	    <style>
+	      body {
+	        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	      }
+	    </style>
+
+		
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="references/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+		
+		<script src="js/app.js"></script>
+		
+		 <!-- Bootstrap -->
+		<link href="references/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div>
+		  <div class="navbar navbar-inverse navbar-fixed-top">
+		      <div class="navbar-inner">
+		        <div class="container">
+		          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="brand" href="#">Crud-Example</a>
+		          <div class="nav-collapse collapse">
+		            <ul class="nav">
+		              <li class="active"><a href="#">Home</a></li>
+		              <li><a href="#employee">Funcionários</a></li>
+		              <li><a href="#department">Departamentos</a></li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+		<div class="container" ng-view ng-animate="'slide'">
+
+    	</div> 
+	</body>
+</html>
