@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.com.victor.crudexample.entity.Department;
-import br.com.victor.crudexample.repository.contract.DepartmentRepositoryContract;
+import br.com.victor.crudexample.repository.DepartmentRepositoryContract;
 import br.com.victor.crudexample.service.contract.DepartmentServiceContract;
 import br.com.victor.crudexample.service.impl.base.AbstractCrudService;
 

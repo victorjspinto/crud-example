@@ -51,13 +51,6 @@ public class EmployeeController {
 	@ResponseBody
 	public void save(@RequestBody Employee employee)
 			throws EntityExistsException {
-		employeeService.insert(employee);
-	}
-
-	@RequestMapping(value = REQUEST_ROOT + "/update", method = RequestMethod.GET)
-	@ResponseBody
-	public void update(@RequestBody Employee employee)
-			throws EntityNotExistException {
-		employeeService.update(employee);
+		employeeService.save(employee);
 	}
 }
